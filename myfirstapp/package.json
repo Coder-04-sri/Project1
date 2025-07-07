@@ -1,9 +1,15 @@
+
+
 {
+  "homepage": "https://coder-04-sri.github.io/Project1/",
+
   "name": "myfirstapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -11,6 +17,7 @@
   },
   "dependencies": {
     "animated-tailwindcss": "^4.0.0",
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
@@ -31,4 +38,6 @@
     "tailwindcss": "^3.4.16",
     "vite": "^6.0.1"
   }
+ 
+
 }

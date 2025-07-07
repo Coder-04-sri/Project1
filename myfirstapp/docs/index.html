@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Project1/vite.svg" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      #burger_box{
+        border: 2px;
+        border-style: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: gray;
+      
+      margin-left: 5px;
+        
+
+      }
+     
+      #list{
+        border: 3px;
+        border-style: solid;
+        border-color: gray;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        transition: 2s linear;
+        border-radius: 2px;
+
+        
+      }
+      #smooth{
+        transition: 2s;
+      }
+    </style>
+    <style>
+      .added_popup{
+        background-color: red;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        position: fixed;
+        bottom: 140px;
+        right: 158px;
+        color: white;
+        opacity: 95%;
+      size: 2px;
+      display: none;
+        
+
+
+      }
+     
+      .clip-custom{
+        clip-path: circle(70%);
+      }
+      .clip-ellipse{
+        clip-path: ellipse(50% 50% at center);
+      }
+
+      /* Spinner */
+.loader {
+  border: 8px solid #d1d5db;
+  border-top: 8px solid #2563eb;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+    </style>
+    <script type="module" crossorigin src="/Project1/assets/index-BHEI9ckl.js"></script>
+    <link rel="stylesheet" crossorigin href="/Project1/assets/index-DlDcO0g_.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
