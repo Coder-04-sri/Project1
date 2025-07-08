@@ -3,6 +3,7 @@ import image1 from '../images/img1.png';
 import aboutimg from '../images/about.jpeg';
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 import  { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function MainPage() {
   const renderStars = (rating) => {
