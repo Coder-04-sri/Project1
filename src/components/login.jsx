@@ -8,45 +8,46 @@ function login() {
       return (
         <>
         <nav className="bg-red-500 fixed top-0 w-full z-10 shadow-md">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-14 items-center">
-              
-             <div className="text-white font-bold text-lg lg:hidden">
-                  <Link to="/main">Zing Grill</Link>
-                </div>
-    
-              
-              <div className="md:hidden">
-                <button
-                  onClick={() => setIsOpen(!isOpen)}
-                  type="button"
-                  className="text-white focus:outline-none text-2xl"
-                >
-                  ☰
-                </button>
-              </div>
-    
-             
-           
-              <div className="lg:space-x-80 lg:ml-10 hidden md:flex space-x-10 font-bold">
-                <Link to="/main" className="text-white hover:text-black">Home</Link>
-                <Link to="/items" className="text-white hover:text-black">Items</Link>
-                <Link to="/contact" className="text-white hover:text-black">Contact</Link>
-                <Link to="/login" className="text-white hover:text-black">Sign</Link>
-              </div>
-            </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-14 items-center">
+
+          {/* Logo */}
+          <div className="text-white font-bold text-lg">
+            <Link to="/main">Zing Grill</Link>
           </div>
-    
-         
-          {isOpen && (
-            <div className="md:hidden bg-red-500 px-4 pb-4 space-y-2 font-bold">
-              <Link to="/main" className="block text-white hover:text-black">Home</Link>
-              <Link to="/items" className="block text-white hover:text-black">Items</Link>
-              <Link to="/contact" className="block text-white hover:text-black">Contact</Link>
-              <Link to="/login" className="block text-white hover:text-black">Sign</Link>
-            </div>
-          )}
-        </nav>
+
+          {/* Hamburger Menu (visible only on small screens) */}
+          <div className="lg:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              type="button"
+              className="text-white text-2xl focus:outline-none"
+            >
+              ☰
+            </button>
+          </div>
+
+          {/* Main Nav Links (visible on large screens only) */}
+          <div className="hidden lg:flex lg:space-x-80 lg:ml-10 space-x-10 font-bold">
+            <Link to="/main" className="text-white hover:text-black">Home</Link>
+            <Link to="/items" className="text-white hover:text-black">Items</Link>
+            <Link to="/contact" className="text-white hover:text-black">Contact</Link>
+            <Link to="/login" className="text-white hover:text-black">Sign</Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu (visible when isOpen is true) */}
+      {isOpen && (
+        <div className="lg:hidden bg-red-500 px-4 pb-4 space-y-2 font-bold">
+          <Link to="/main" className="block text-white hover:text-black">Home</Link>
+          <Link to="/items" className="block text-white hover:text-black">Items</Link>
+          <Link to="/contact" className="block text-white hover:text-black">Contact</Link>
+          <Link to="/login" className="block text-white hover:text-black">Sign</Link>
+        </div>
+      )}
+    </nav>
+  
 
      
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br bg-white pt-20 px-4">

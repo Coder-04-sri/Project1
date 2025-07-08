@@ -25,16 +25,16 @@ function MainPage() {
     <>
     <nav className="bg-red-500 fixed top-0 w-full z-10 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-14 items-center">
+        <div className="flex justify-between lg:h-14 md:h-32 items-center">
           
          
 
           
-          <div className="md:hidden">
+          <div className="md:hidden ">
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="text-white focus:outline-none text-2xl"
+              className="text-white focus:outline-none md:text-7xl"
             >
               ☰
             </button>
@@ -42,7 +42,7 @@ function MainPage() {
 
          
           
-                        <div className="lg:space-x-80 lg:ml-10 hidden md:flex space-x-10 font-bold">
+                        <div className="lg:space-x-80 lg:ml-10 hidden md:flex space-x-10  lg:text-xl md:text-5xl md:space-x-20  md:ml-16 font-bold">
                           <Link to="/main" className="text-white hover:text-black">Home</Link>
                           <Link to="/items" className="text-white hover:text-black">Items</Link>
                           <Link to="/contact" className="text-white hover:text-black">Contact</Link>
@@ -66,32 +66,32 @@ function MainPage() {
 
 
 
-      <div className="mt-14 bg-gradient-to-l from-red-500 to-red-500 h-auto md:h-[600px] rounded-b-[15%] md:rounded-b-[50%] relative">
+      <div className="lg:mt-10 md:mt-16 bg-gradient-to-l from-red-500 to-red-500 lg:h-[620px] md:h-[800px] rounded-b-[15%] md:rounded-b-[50%] relative">
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-12 md:py-0 h-full">
           <img
             src={image1}
             alt="Main"
-            className="rounded-full w-72 h-72 md:h-[450px] md:w-[450px] object-cover shadow-lg"
+            className=" rounded-full w-72 h-72 md:h-[500px] md:w-[500px] object-cover shadow-lg"
           />
           <div className="text-white text-center md:text-left font-title">
-            <h1 className="text-6xl md:text-9xl">Zing</h1>
-            <h2 className="text-3xl md:text-6xl font-mono mt-2 md:mt-4">Grill</h2>
-            <p className="mt-6 text-lg md:text-xl font-medium tracking-wide">Time to Feed Yourself</p>
+            <h1 className="lg:text-9xl md:text-9xl">Zing</h1>
+            <h2 className="lg:text-8xl md:text-9xl font-mono mt-2 md:mt-4">Grill</h2>
+            <p className="mt-6 text-lg md:text-4xl font-medium tracking-wide md:mr-3">Time to Feed Yourself</p>
           </div>
         </div>
       </div>
 
       
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10 py-20 px-6 md:px-16">
-        <p className="w-full md:w-1/2 text-lg leading-relaxed tracking-wider text-gray-700 text-center md:text-left">
+      <div className=" md:grid lg:flex flex-col md:flex-row items-center justify-center lg:gap-10 py-20 px-6 md:px-16 md:mr-5">
+        <p className="w-full lg:text-2xl md:text-4xl md:w-1/1 text-lg leading-relaxed tracking-wider text-gray-700 text-center md:text-left">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque autem delectus aspernatur nisi quisquam
           neque rerum, similique fugit tenetur repellat, deleniti numquam quo soluta excepturi deserunt nesciunt...
         </p>
-        <div className="clip-custom">
+        <div className="clip-custom  ">
           <img
             src={aboutimg}
             alt="About"
-            className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-xl shadow-md"
+            className=" lg:w-72 lg:h-72 md:w-[800px] md:mt-10 md:h-[800px] object-cover rounded-xl shadow-md"
           />
         </div>
       </div>
@@ -117,8 +117,8 @@ function MainPage() {
 
      
       <footer className="mt-24">
-        <div className="bg-red-500 flex items-center justify-center text-white h-14">
-          <a href="/items" className="font-mono text-lg hover:underline">See more items!</a>
+        <div className="bg-red-500 flex items-center justify-center text-white lg:h-14 md:h-20">
+          <a href="/items" className="font-mono md:text-6xl lg:p-0 md:p-3 lg:text-4xl hover:underline">See more items!</a>
         </div>
       </footer>
     </>
