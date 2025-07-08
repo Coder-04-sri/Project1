@@ -21,17 +21,17 @@ function App() {
      
         <Routes>
           <Route index element={<Page1 />} />
-          <Route path="main" element={<Page1 />} />
-          <Route path="items" element={<Page2 />} />
-          <Route path="contact" element={<Page3 />} />
-          <Route path="login" element={<Page4 />} />
-          <Route path="Burger" element={<Page5 />} />
-          <Route path="Grill" element={<Page6 />} />
-          <Route path="FFries" element={<Page11 />} />
-          <Route path="Crispy" element={<Page8 />} />
-          <Route path="Mojito" element={<Page9 />} />
-          <Route path="Coke" element={<Page7 />} />
-          <Route path="cart" element={<CartPage />} /> 
+          <Route path="/main" element={<Page1 />} />
+          <Route path="/items" element={<Page2 />} />
+          <Route path="/contact" element={<Page3 />} />
+          <Route path="/login" element={<Page4 />} />
+          <Route path="/Burger" element={<Page5 />} />
+          <Route path="/Grill" element={<Page6 />} />
+          <Route path="/FFries" element={<Page11 />} />
+          <Route path="/Crispy" element={<Page8 />} />
+          <Route path="/Mojito" element={<Page9 />} />
+          <Route path="/Coke" element={<Page7 />} />
+          <Route path="/cart" element={<CartPage />} /> 
           <Route path="/payment" element={<PaymentProcessingPage />} />
         </Routes>
     

@@ -57,10 +57,10 @@ const Coke= () => {
     
              
               <div className="lg:space-x-80 lg:ml-10 hidden md:flex space-x-10 font-bold">
-                <a href="/main" className="text-white hover:text-black">Home</a>
-                <a href="/items" className="text-white hover:text-black">Items</a>
-                <a href="/contact" className="text-white hover:text-black">Contact</a>
-                <a href="/login" className="text-white hover:text-black">Sign</a>
+                <Link to="/main" className="text-white hover:text-black">Home</Link>
+                <Link to="/items" className="text-white hover:text-black">Items</Link>
+                <Link to="/contact" className="text-white hover:text-black">Contact</Link>
+                <Link to="/login" className="text-white hover:text-black">Sign</Link>
               </div>
             </div>
           </div>
@@ -68,10 +68,10 @@ const Coke= () => {
          
           {isOpen && (
             <div className="md:hidden bg-red-500 px-4 pb-4 space-y-2 font-bold">
-              <a href="/main" className="block text-white hover:text-black">Home</a>
-              <a href="/items" className="block text-white hover:text-black">Items</a>
-              <a href="/contact" className="block text-white hover:text-black">Contact</a>
-              <a href="/login" className="block text-white hover:text-black">Sign</a>
+              <Link to="/main" className="block text-white hover:text-black">Home</Link>
+              <Link to="/items" className="block text-white hover:text-black">Items</Link>
+              <Link to="/contact" className="block text-white hover:text-black">Contact</Link>
+              <Link to="/login" className="block text-white hover:text-black">Sign</Link>
             </div>
           )}
         </nav>
