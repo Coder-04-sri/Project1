@@ -9,9 +9,9 @@ import { CartProvider } from './context/CartContext';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <CartProvider>
-    <BrowseRouter base='/Project1/'>
+    <BrowserRouter base='/Project1/'>
         <App />
-      </BrowseRouter>
+      </BrowserRouter>
     </CartProvider>
   </React.StrictMode>
 );
