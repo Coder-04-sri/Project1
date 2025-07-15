@@ -110,7 +110,7 @@ function Items() {
           </div>
 
           {/* Main Nav Links (visible on large screens only) */}
-          <div className="hidden lg:flex lg:space-x-80 lg:ml-10 space-x-10 font-bold">
+          <div className="hidden lg:flex text-lg lg:space-x-80 lg:ml-10 space-x-10 font-bold">
             <Link to="/main" className="text-white hover:text-black">Home</Link>
             <Link to="/items" className="text-white hover:text-black">Items</Link>
             <Link to="/contact" className="text-white hover:text-black">Contact</Link>
@@ -121,7 +121,7 @@ function Items() {
 
       {/* Mobile Menu (visible when isOpen is true) */}
       {isOpen && (
-        <div className="lg:hidden md:text-5xl md:mt-3 bg-red-500 px-4 pb-4 space-y-3 font-bold">
+        <div className="lg:hidden md:text-5xl md:mt-3 bg-red-500 px-4 pb-4 space-y-4 font-bold">
           <Link to="/main" className="block text-white hover:text-black">Home</Link>
           <Link to="/items" className="block text-white hover:text-black">Items</Link>
           <Link to="/contact" className="block text-white hover:text-black">Contact</Link>
@@ -143,7 +143,7 @@ function Items() {
       </div>
 
       <section className="mt-10">
-        <ul className="lg:flex md:flex md:flex-wrap lg:flex-wrap justify-center lg:gap-10 md:gap-5 md:mr-5 lg:mr-0 lg:text-lg md:text-4xl font-medium text-gray-600 cursor-pointer">
+        <ul className="lg:flex md:flex md:flex-wrap lg:flex-wrap justify-center lg:gap-10 md:gap-5 md:mr-5 lg:mr-0 lg:text-lg md:text-[37px] font-medium text-gray-600 cursor-pointer">
           <li className="hover:text-red-500">
             <Link to="/burger">🍔 Burger</Link>
           </li>
@@ -168,7 +168,7 @@ function Items() {
 
       <section className="text-center mt-16 px-6">
         <h2 className="lg:text-3xl md:text-5xl font-bold text-red-500">Special Offers Just For You!</h2>
-        <p className="text-gray-700 mt-2 max-w-xl mx-auto lg:text-lg md:text-2xl">
+        <p className="text-gray-700 mt-2 max-w-xl mx-auto lg:text-lg md:text-3xl">
           Order 2 or more items and get a free drink. Fresh ingredients, tasty
           flavors, and hot deals every day!
         </p>
@@ -196,7 +196,7 @@ function Items() {
                   image: item.image,
                   quantity: 1,
                 })}
-                className="bg-green-500 lg:text-lg md:text-4xl lg:p-2 rounded-full relative left-32 lg:w-24 md:w-52 md:p-8 text-white hover:text-black mt-4"
+                className="bg-green-500 lg:text-lg md:text-4xl lg:p-2 md:ml-60 lg:ml-0 rounded-full relative left-32 lg:w-24 md:w-52 md:p-8 text-white hover:text-black mt-4"
               >
                 {item.button}
               </button>
@@ -210,14 +210,14 @@ function Items() {
 <Link to="/cart">
   <button
     aria-label="Cart item count"
-    className="fixed bottom-6 right-4 sm:bottom-8 sm:right-6 md:bottom-10 md:right-8 
+    className="fixed bottom-6 right-4 sm:bottom-8 sm:right-6 md:bottom-10 md:right-10
                bg-green-500 text-white lg:text-2xl md:text-6xl lg:w-14 lg:h-14 md:w-36 md:h-36 sm:w-16 sm:h-16 
                rounded-full shadow-lg z-30 flex items-center justify-center hover:bg-green-600"
   >
     +
     {totalCount > 0 && (
-      <div className="absolute -top-2 -right-2 bg-red-600 w-6 h-6 rounded-full 
-                      text-xs sm:text-sm flex items-center justify-center font-bold">
+      <div className="absolute -top-2 -right-2 bg-red-600 lg:w-6 lg:h-6 rounded-full  md:w-12 md:h-12
+                      lg:text-xs sm:text-sm md:text-3xl flex items-center justify-center font-bold">
         {totalCount}
       </div>
     )}

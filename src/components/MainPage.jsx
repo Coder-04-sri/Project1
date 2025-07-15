@@ -118,7 +118,7 @@ function MainPage() {
      
       <footer className="mt-24">
         <div className="bg-red-500 flex items-center justify-center text-white lg:h-14 md:h-20">
-          <a href="/items" className="font-mono md:text-6xl lg:p-0 md:p-3 lg:text-4xl hover:underline">See more items!</a>
+          <Link to="/items" className="font-mono md:text-6xl lg:p-0 md:p-3 lg:text-4xl hover:underline">See more items!</Link>
         </div>
       </footer>
     </>
