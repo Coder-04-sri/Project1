@@ -75,7 +75,7 @@ function login() {
 
             <div className="flex items-center justify-between text-sm text-gray-600">
               <label className="flex items-center md:text-4xl lg:text-lg ">
-                <input type="checkbox" className="scale-150 lg:h-3 lg:w-4 md:h-6 md:w-6 mr-10 sm:h-2 sm:w-2 " />
+                <input type="checkbox" className=" lg:h-4 lg:w-4 md:h-7 md:w-7 mr-10 sm:h-2 sm:w-2 " />
                 Remember me
               </label>
               <a href="#" className="text-red-500 hover:underline md:text-4xl lg:text-lg">Forgot password?</a>
