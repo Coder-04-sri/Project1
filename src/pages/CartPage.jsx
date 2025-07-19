@@ -2,11 +2,9 @@ import React from 'react';
 import { useCart } from '../context/CartContext';
 import { useNavigate } from 'react-router-dom';
 
-
 const CartPage = () => {
-  const { cartItems, increment, decrement } = useCart();
+  const { cartItems, increment, decrement, clearCart } = useCart(); // ✅ Include clearCart
   const navigate = useNavigate();
-
 
   const getPrice = (item) => {
     const price =
@@ -38,7 +36,6 @@ const CartPage = () => {
               alt={item.name}
               className="lg:w-24 lg:h-24 md:w-64  md:h-80 object-cover rounded"
             />
-
             <div className="ml-6 flex-1">
               <h2 className="lg:text-xl md:text-5xl  font-bold text-gray-800">{item.name}</h2>
               <p className="text-gray-600 lg:text-lg md:text-4xl">Price: ${getPrice(item).toFixed(2)}</p>
@@ -67,21 +64,23 @@ const CartPage = () => {
         ))}
       </div>
 
-    
-            <div className="mt-10 text-right lg:text-lg md:text-4xl">
+      <div className="mt-10 text-right lg:text-lg md:text-4xl">
         <p className="lg:text-lg md:text-4xl font-semibold">Total Items: {totalItems}</p>
         <p className="lg:text-2xl md:text-5xl font-bold text-blue-700">
           Total Price: ${totalPrice.toFixed(2)}
         </p>
 
         <button
-          onClick={() => navigate('/payment')}
+          onClick={() => {
+            clearCart();         // ✅ Clears cart
+            navigate('/payment'); // ✅ Navigates
+          }}
+          type='button'
           className="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:scale-105 transform transition duration-300 ease-in-out"
         >
          🛒 Buy Now
         </button>
       </div>
-
     </div>
   );
 };

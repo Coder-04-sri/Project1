@@ -42,12 +42,12 @@ const Mojito = () => {
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <div className="flex justify-between  lg:h-14 md:h-28 items-center">
    
-             {/* Logo */}
+           
              <div className="text-white font-bold lg:text-lg lg:hidden md:text-6xl">
                <Link to="/main">Zing Grill</Link>
              </div>
    
-             {/* Hamburger Menu (visible only on small screens) */}
+             
              <div className="lg:hidden md:mr-12 lg:mr-0">
                <button
                  onClick={() => setIsOpen(!isOpen)}
@@ -58,23 +58,22 @@ const Mojito = () => {
                </button>
              </div>
    
-             {/* Main Nav Links (visible on large screens only) */}
+             
              <div className="hidden  text-lg lg:flex lg:space-x-80 lg:ml-10 space-x-10 font-bold">
                <Link to="/main" className="text-white hover:text-black">Home</Link>
                <Link to="/items" className="text-white hover:text-black">Items</Link>
                <Link to="/contact" className="text-white hover:text-black">Contact</Link>
-               <Link to="/login" className="text-white hover:text-black">Sign</Link>
+               <Link to="/login" className="text-white hover:text-black">SignIn</Link>
              </div>
            </div>
          </div>
    
-         {/* Mobile Menu (visible when isOpen is true) */}
          {isOpen && (
            <div className="lg:hidden md:text-5xl md:mt-3 bg-red-500 px-4 pb-4 space-y-4 font-bold">
              <Link to="/main" className="block text-white hover:text-black">Home</Link>
              <Link to="/items" className="block text-white hover:text-black">Items</Link>
              <Link to="/contact" className="block text-white hover:text-black">Contact</Link>
-             <Link to="/login" className="block text-white hover:text-black">Sign</Link>
+             <Link to="/login" className="block text-white hover:text-black">Sign In</Link>
            </div>
          )}
        </nav>
@@ -82,7 +81,7 @@ const Mojito = () => {
   
 
 
-      {/* Category Tabs */}
+     
       <section className="fixed md:top-28 lg:top-14 z-[1] lg:h-12 md:h-24 w-full bg-white opacity-90 overflow-x-auto whitespace-nowrap">
         <ul className="flex gap-6 sm:gap-40 px-4 lg:py-3 md:py-5 lg:text-lg md:text-[40px]  sm:text-lg font-medium text-gray-600">
           <li className="hover:text-gray-700"><Link to="/Burger">Burger</Link></li>
@@ -96,7 +95,7 @@ const Mojito = () => {
       </section>
       <br />
 
-      {/* Burger Items */}
+     
       <div className="lg:pt-36 md:pt-48 lg:px-4 sm:px-6   md:px-8 grid lg:grid-cols-2 md:grid-cols-1 lg:space-y-0 gap-10 md:space-y-10 z-0">
         {mojitoItems.map((item, index) => (
           <div key={index} className="flex flex-col md:h-[500px] lg:h-52 lg:w-[600px] md:w-[900px] sm:flex-row bg-gradient-to-r from-amber-200
@@ -122,7 +121,7 @@ const Mojito = () => {
           </div>
         ))}
 
-    {/* Floating Cart Button */}
+   ~
 <Link to="/cart">
   <button
     aria-label="Cart item count"

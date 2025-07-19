@@ -93,12 +93,12 @@ function Items() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between  lg:h-14 md:h-28 items-center">
 
-          {/* Logo */}
+          
           <div className="text-white font-bold lg:text-lg lg:hidden md:text-6xl">
             <Link to="/main">Zing Grill</Link>
           </div>
 
-          {/* Hamburger Menu (visible only on small screens) */}
+         
           <div className="lg:hidden md:mr-12 lg:mr-0">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -109,23 +109,23 @@ function Items() {
             </button>
           </div>
 
-          {/* Main Nav Links (visible on large screens only) */}
+          
           <div className="hidden lg:flex text-lg lg:space-x-80 lg:ml-10 space-x-10 font-bold">
             <Link to="/main" className="text-white hover:text-black">Home</Link>
             <Link to="/items" className="text-white hover:text-black">Items</Link>
             <Link to="/contact" className="text-white hover:text-black">Contact</Link>
-            <Link to="/login" className="text-white hover:text-black">Sign</Link>
+            <Link to="/login" className="text-white hover:text-black">SignIn</Link>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu (visible when isOpen is true) */}
+     
       {isOpen && (
         <div className="lg:hidden md:text-5xl md:mt-3 bg-red-500 px-4 pb-4 space-y-4 font-bold">
           <Link to="/main" className="block text-white hover:text-black">Home</Link>
           <Link to="/items" className="block text-white hover:text-black">Items</Link>
           <Link to="/contact" className="block text-white hover:text-black">Contact</Link>
-          <Link to="/login" className="block text-white hover:text-black">Sign</Link>
+          <Link to="/login" className="block text-white hover:text-black">Sign In</Link>
         </div>
       )}
     </nav>
@@ -143,24 +143,24 @@ function Items() {
       </div>
 
       <section className="mt-10">
-        <ul className="lg:flex md:flex md:flex-wrap lg:flex-wrap justify-center lg:gap-10 md:gap-5 md:mr-5 lg:mr-0 lg:text-lg md:text-[37px] font-medium text-gray-600 cursor-pointer">
+        <ul className="lg:flex md:flex md:flex-wrap lg:flex-wrap justify-center lg:gap-12 md:gap-10 md:mr-5 lg:mr-0 lg:text-lg md:text-[40px] font-medium text-gray-600 cursor-pointer">
           <li className="hover:text-red-500">
-            <Link to="/burger">🍔 Burger</Link>
+            <Link to="/burger"> Burger</Link>
           </li>
           <li className="hover:text-red-500">
-            <Link to="/grill">🔥 Grill</Link>
+            <Link to="/grill"> Grill</Link>
           </li>
           <li className="hover:text-red-500">
-            <Link to="/FFries">🍟 French Fries</Link>
+            <Link to="/FFries"> French Fries</Link>
           </li>
           <li className="hover:text-red-500">
-            <Link to="/crispy">🍗 Crispy Chicken</Link>
+            <Link to="/crispy"> Crispy Chicken</Link>
           </li>
           <li className="hover:text-red-500">
-            <Link to="/mojito">🥤 Mojito</Link>
+            <Link to="/mojito"> Mojito</Link>
           </li>
           <li className="hover:text-red-500">
-            <Link to="/coke">🥶 Cokes</Link>
+            <Link to="/coke"> Cokes</Link>
           </li>
         </ul>
         <hr className="mt-6 lg:w-3/4 md:w-72 sm:w-72 mx-auto border-gray-300" />
@@ -206,7 +206,7 @@ function Items() {
         ))}
 
        
-     {/* Floating Cart Button */}
+     
 <Link to="/cart">
   <button
     aria-label="Cart item count"

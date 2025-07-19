@@ -46,7 +46,7 @@ function MainPage() {
                           <Link to="/main" className="text-white hover:text-black">Home</Link>
                           <Link to="/items" className="text-white hover:text-black">Items</Link>
                           <Link to="/contact" className="text-white hover:text-black">Contact</Link>
-                          <Link to="/login" className="text-white hover:text-black">Sign</Link>
+                          <Link to="/login" className="text-white hover:text-black">SignIn</Link>
                         </div>
                       </div>
                     </div>
@@ -57,7 +57,7 @@ function MainPage() {
                         <Link to="/main" className="block text-white hover:text-black">Home</Link>
                         <Link to="/items" className="block text-white hover:text-black">Items</Link>
                         <Link to="/contact" className="block text-white hover:text-black">Contact</Link>
-                        <Link to="/login" className="block text-white hover:text-black">Sign</Link>
+                        <Link to="/login" className="block text-white hover:text-black">Sign In</Link>
                       </div>
       )}
     </nav>
