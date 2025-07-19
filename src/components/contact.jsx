@@ -39,7 +39,7 @@ function contact() {
           
                 
                 {isOpen && (
-                  <div className="lg:hidden md:text-5xl md:mt-3 bg-red-500 px-4 pb-4 space-y-4 font-bold">
+                  <div className="lg:hidden md:text-6xl md:mt-3 bg-red-500 px-4 pb-4 space-y-5 font-bold">
                     <Link to="/main" className="block text-white hover:text-black">Home</Link>
                     <Link to="/items" className="block text-white hover:text-black">Items</Link>
                     <Link to="/contact" className="block text-white hover:text-black">Contact</Link>

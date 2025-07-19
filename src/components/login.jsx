@@ -38,7 +38,7 @@ function login() {
          </div>
    
          {isOpen && (
-           <div className="lg:hidden md:text-5xl md:mt-3 bg-red-500 px-4 pb-4 space-y-4 font-bold">
+           <div className="lg:hidden md:text-6xl md:mt-3 bg-red-500 px-4 pb-4 space-y-5 font-bold">
              <Link to="/main" className="block text-white hover:text-black">Home</Link>
              <Link to="/items" className="block text-white hover:text-black">Items</Link>
              <Link to="/contact" className="block text-white hover:text-black">Contact</Link>
@@ -52,7 +52,7 @@ function login() {
       <div className="min-h-screen   flex items-center justify-center bg-gradient-to-br bg-white lg:pt-20 md:pt-16 px-4">
         <div className="bg-white md:w-[830px] lg:w-[600px] lg:h-[500px] md:h-[800px] shadow-2xl rounded-2xl lg:w-sm p-8">
           <h2 className="lg:text-3xl md:text-6xl font-extrabold text-center text-red-600 font-serif">Sign In to Zing Grill</h2>
-          <p className="text-center text-gray-600 lg:text-sm md:text-3xl mt-3 mb-6">Welcome back! Please enter your credentials</p>
+          <p className="text-center text-gray-600 lg:text-sm md:text-3xl mt-4 mb-6">Welcome back! Please enter your credentials</p>
 
           <form className="space-y-6">
             <div>
@@ -60,7 +60,7 @@ function login() {
               <input
                 type="email"
                 placeholder="you@example.com"
-                className="mt-1 block w-full lg:px-4 md:text-4xl lg:text-lg lg:py-2 md:px-5 md:py-6 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-400"
+                className="mt-3  block w-full lg:px-4 md:text-4xl lg:text-lg lg:py-2 md:px-5 md:py-6 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0"
               />
             </div>
 
@@ -69,13 +69,13 @@ function login() {
               <input
                 type="password"
                 placeholder="••••••••"
-                className="mt-1 outline-none md:text-4xl lg:text-lg block w-full lg:px-4 lg:py-2 md:px-5 md:py-6 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-400"
+                className="mt-3 outline-none md:text-4xl lg:text-lg block w-full lg:px-4 lg:py-2 md:px-5 md:py-6 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0"
               />
             </div>
 
             <div className="flex items-center justify-between text-sm text-gray-600">
               <label className="flex items-center md:text-4xl lg:text-lg ">
-                <input type="checkbox" className="mr-10 w-[10px]" />
+                <input type="checkbox" className="scale-150 lg:h-3 lg:w-4 md:h-6 md:w-6 mr-10 " />
                 Remember me
               </label>
               <a href="#" className="text-red-500 hover:underline md:text-4xl lg:text-lg">Forgot password?</a>
