@@ -143,7 +143,7 @@ function Items() {
       </div>
 
       <section className="mt-10">
-        <ul className="lg:flex md:flex md:flex-wrap lg:flex-wrap justify-center lg:gap-12 md:gap-10 md:mr-5 lg:mr-0 lg:text-lg md:text-[40px] font-medium text-gray-600 cursor-pointer">
+        <ul className="lg:flex ml-2 md:flex md:flex-wrap lg:flex-wrap justify-center lg:gap-12 md:gap-10 md:mr-5 lg:mr-0 lg:text-lg md:text-[40px] font-medium text-gray-600 cursor-pointer">
           <li className="hover:text-red-500">
             <Link to="/burger"> Burger</Link>
           </li>
